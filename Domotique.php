@@ -7,7 +7,7 @@
     </head>
 
 <body>
-	<?php include'header1.php';?>
+	<?php include'header1.php';?>	<!--On inclut le header1.php pour faciliter la lecture du fichier-->
 
 	<section>
 		<aside class="box">
