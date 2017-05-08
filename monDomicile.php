@@ -1,14 +1,33 @@
+<?php
+session_start();
+
+$_SESSION['prenom'] = $_POST['prenom'];
+$_SESSION['nom'] = $_POST['nom'];
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="Styles/domotique.css">
+        <link rel="stylesheet" href="Styles/domotique1.css">
 		<title>G7Entreprise</title>
     </head>
 
 <body>
-	<?php include'header2.php';?>
-	
+<?php
+	include'header2.php';
+
+	if ($_POST['prenom']!='' AND $_POST['nom']!='')
+	{
+		echo htmlspecialchars("Bonjour " . ' ' . $_SESSION['prenom'] . ' ' . $_SESSION['nom']);
+	}
+
+	else
+	{
+		echo "Veuillez entrer tous les paramètres nécessaires.";
+	}
+
+?>
 
 	<section>
 		<div id="domicile">
