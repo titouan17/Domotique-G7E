@@ -475,6 +475,85 @@ h1{
 /*FIN MON DOMICILE*/
 /************************************************/
 
+/************************************************/
+/*Contact*/
+/************************************************/
+#contact-box
+{
+	padding-top: 15%;
+}
+
+#contact-box h1
+{
+	text-align: center;
+}
+
+#contact{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	background-color : #383176;
+	padding: 2.5%;
+	margin-top: 10%;
+}
+
+.b1  
+{
+    text-align: justify;
+    width: 30%;
+}
+
+.b1 img
+{
+	border-radius: 20px;
+	align-content: center;
+	height: 20vw;
+	width: 28vw;
+}
+
+.b1 h3
+{
+	text-align: center;
+}
+
+.b2
+{
+    text-align: justify;
+    width: 30%;
+}
+
+.b2 img
+{
+	border-radius: 20px;
+	height: 20vw;
+	width: 28vw;
+}
+
+.b2 h3
+{
+	text-align: center;
+}
+
+.b3
+{
+    text-align: justify;
+    width: 30%;
+}
+
+.b3 img
+{
+	border-radius: 20px;
+	height: 20vw;
+	width: 28vw;
+}
+
+.b3 h3
+{
+	text-align: center;
+}
+/************************************************/
+/*FIN CONTACT*/
+/************************************************/
 
 /************************************************/
 /*Footer*/
