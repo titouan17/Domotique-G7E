@@ -1,0 +1,718 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: verdana;
+}
+body:before {
+        content: "";
+        position: fixed;
+        height: 100%; width: 100%;
+        background-image: url(house_fond.jpg);
+        background-size: cover;
+        z-index: -1;
+        -webkit-opacity :0.8;
+    }
+
+
+
+/****************************************************/
+/*DEBUT HEADER1-2*/
+/****************************************************/
+header
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 7.3vw;
+}
+
+#header2{
+	display: flex;
+	justify-content: space-between;
+}
+
+#conteneur{
+	display: flex;
+	flex-direction: row;
+	height: 7.3vw;
+}
+
+.logo{
+	height: 7.2vw;
+	width: 8vw;
+}
+
+.nom{
+	font-size: 2.5vw;
+	font-weight: bold;
+	width: 8vw;
+	padding-top: 0.7vw;
+	padding-left: 0.5vw;
+	color: #FF3A40; 
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li{
+	margin-right: 5vw;
+	margin-top: 2.3vw;
+}
+
+nav a{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.5vw;
+}
+
+nav a:hover{
+	color: #FF3A40;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1vw;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.rechercher
+{	
+	margin-top: 25px;
+}
+
+@media screen and (max-width: 1024px){
+
+	.nom{
+		padding-top: 1vw;
+		font-size: 4vw;
+		width: 40vw;
+	}
+
+	nav a{
+		font-size: 1.4vw;
+	}
+	
+	.head2 li{
+		margin-top: 1vw;
+	}
+
+	.rechercher{
+		display: none;
+	}
+}
+
+/****************************************************/
+/*FIN HEADER2*/
+/****************************************************/
+
+
+/************************************************/
+/*ACCUEIL*/
+/************************************************/
+.box
+{
+	padding-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#box_connexion
+{
+	border: 2px solid #383176;
+	width: 30%;
+	padding: 2.5%;
+	margin: auto;
+	border-radius: 10px;
+	background-color: #F0F3F4;
+}
+
+#box_connexion h1
+{
+	text-align: center;
+	font-size: 30px;
+	color: #383176;
+}
+
+.formulaire_connexion
+{
+	color: #383176;
+}
+
+.inscription
+{
+	text-align: center;
+	color: #FF3A40;
+}
+
+input[type=text]
+{
+	width: 9vw;
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 5px;
+}
+
+input[type=submit]{
+	background-color: #FF3A40;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+input[type=email]{
+	width: 9vw;
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 5px;
+}
+
+input[type=password]{
+	width: 10vw;
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 5px;
+}
+
+input[type=date]{
+	width: 11vw;
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+}
+/************************************************/
+/*FIN ACCUEIL*/
+/************************************************/
+
+
+
+
+
+
+/************************************************/
+/*DESCRIPTION QUI SOMMES NOUS*/
+/************************************************/
+h1{
+	font-size: 40px;
+	font-weight: lighter;
+	color: black;
+	line-height: 30pt;
+}
+
+.banniere_description
+{
+	text-align: center;
+	color: #383176;
+	font-size: 30px;
+	padding-top: 200px;
+}
+
+.banniere_description a
+{
+	text-decoration: none;
+	color: #383176;
+	border-color: #383176;
+}
+
+.banniere_description a:hover
+{
+	color: #FF3A40;
+	background-color: white;
+	border-color: white;
+}
+
+.acheter{
+	margin: auto;
+	font-size: 20px;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#contenu{
+	display: flex;
+	flex-direction: column;
+	background-color: #241C6C;
+	margin-top: 10%;
+}
+
+#sous-contenu{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 5%;
+}
+
+#sous-contenu:nth-child(2){
+	padding-bottom: 5%;
+}
+
+.logo2{
+	height: 20vw;
+	width: 20vw;
+}
+
+.photo1{
+	border-radius: 20px;
+	height: 20vw;
+	width: 20vw;
+}
+
+.cyan{
+	color: #76D7C4;
+}
+
+.description{
+	width: 35%;
+	padding-left: 7%;
+	padding-right: 7%; 
+	padding-bottom: 5%;
+	font-size: 16px;
+	color: white;
+	text-align: justify;
+	line-height: 20pt;
+	font-weight: lighter;
+}
+
+
+.description:nth-child(2){
+	align-self: flex-end;
+}
+
+.paysage_urbain
+{
+	background: url(paysage_urbain.jpg) no-repeat;
+	height: 300px;
+	position: relative;
+	margin-top: -5%;
+}
+
+.paysage_description{
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 70px;
+	font-style: italic;
+	font-family: courier;
+}
+
+#contenu2{
+	display: flex;
+	justify-content: space-around;
+	background-color: #1B4F72;
+	align-items: center;
+	padding: 5%;
+}
+
+.description2{
+	width: 30%;
+	font-size: 18px;
+	color: white;
+	text-align: justify;
+	line-height: 20pt;
+}
+
+.photo2{
+	border-radius: 20px;
+	height: 400px;
+	width: 300px;
+}
+
+@media screen and (max-width: 1024px)
+{
+	.description
+	{
+		width: auto;
+		margin: auto;
+		text-align: center;
+	}
+
+	.logo2
+	{
+		display: none;
+	}
+
+	.photo1
+	{
+		display: none;
+	}
+
+	.paysage_urbain
+	{
+		display: none;
+	}
+
+	.photo2
+	{
+		display: none;
+	}
+
+	.description2
+	{
+		width: auto;
+		margin: auto;
+		text-align: center;
+	}
+
+
+}
+
+/************************************************/
+/*FIN DESCRIPTION QUI SOMMES NOUS*/
+/************************************************/
+
+
+/************************************************/
+/*DESCRIPTION CEMAC*/
+/************************************************/
+
+#contenu3{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10%;
+}
+
+.description3{
+	width: 75%;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-top: 200px;
+}
+
+.description3 h1
+{
+	color: #FF5151;
+}
+
+.equiper{
+	color: white;
+	background-color: #383176;
+	border: none;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 20px;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.equiper:hover
+{
+	background-color: white;
+	color: #FF3A40; 				/*Saumon*/
+}
+
+/*Description 2*/
+#contenu4{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5%;
+	background-color: #383176;
+	margin-bottom: 10%;
+}
+
+.titre{
+	color: #FF3A40;
+	text-align: center;
+}
+
+.description4{
+	color: white;
+	width: 20%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	text-align: justify;
+	line-height: 20pt;
+	font-weight: lighter;
+}
+
+@media screen and (max-width: 1024px)
+{
+	#contenu4{
+		flex-direction: column;
+	}
+
+	.description4
+	{
+		width: auto;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+/************************************************/
+/*FIN DESCRIPTION CEMAC*/
+/************************************************/
+
+
+/************************************************/
+/*MON DOMICILE*/
+/************************************************/
+#domicile
+{
+	padding-top: 200px;
+}
+
+#domicile h2
+{
+	color: #76D7C4;
+ 
+}
+
+#piece
+{
+	display: inline-block;
+	max-width: 80%;
+	max-height: auto;
+	border: 2px solid black;
+	margin-bottom: 10%;
+	padding: 2.5%;
+	border-radius: 10px;
+	background-color: white;
+}
+
+/*#ligne
+{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 50px;
+	margin-bottom: 50px;
+}*/
+
+.capteur
+{
+	display: inline-block;
+	width: 100px;
+	height: 75px;
+	margin: auto;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-right: 50px;	
+}
+
+#capteur h3
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#capteur ul
+{
+	align-content: center;
+	text-align: center;
+}
+
+.description_capteur
+{
+	font-size: 20px;
+}
+
+.temperature
+{
+	height: 40px;
+	width: 40px;
+}
+
+.luminosite
+{
+	height: 40px;
+	width: 40px;
+}
+
+.humidite
+{
+	height: 40px;
+	width: 40px;
+}
+/************************************************/
+/*FIN MON DOMICILE*/
+/************************************************/
+
+/************************************************/
+/*Contact*/
+/************************************************/
+#contact-box
+{
+	padding-top: 10%;
+}
+
+#contact-box h1
+{
+	text-align: center;
+	color: #FF3A40;
+}
+
+#contact{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	background-color : #383176;
+	padding: 2.5%;
+	margin-top: 10%;
+}
+
+.b1
+{
+    text-align: justify;
+    width: 30%;
+    color: white
+}
+
+.b1 img
+{
+	border-radius: 20px;
+	align-content: center;
+	height: 20vw;
+	width: 28vw;
+	padding-top: 20%;
+}
+
+.b1 h3
+{
+	text-align: center;
+	padding-bottom: 15%;
+	color: #FF3A40;
+}
+
+.appeler
+{
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+.b2
+{
+    text-align: justify;
+    width: 30%;
+   	color: white;
+}
+
+.b2 img
+{
+	border-radius: 20px;
+	height: 20vw;
+	width: 28vw;
+}
+
+.b2 h3
+{
+	text-align: center;
+	padding-bottom: 10%;
+	color: #FF3A40;
+}
+
+.b2 a
+{
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+.b3
+{
+    text-align: justify;
+    width: 30%;
+}
+
+.b3 img
+{
+	border-radius: 20px;
+	height: 20vw;
+	width: 28vw;
+}
+
+.b3 h3
+{
+	text-align: center;
+	padding-bottom: 10%;
+	color: #FF3A40;
+}
+
+.b3 p
+{
+	color: white;
+}
+
+.b3 a
+{
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+/************************************************/
+/*FIN CONTACT*/
+/************************************************/
+
+
+/************************************************/
+/*Footer*/
+/************************************************/
+#conteneurFooter{
+	display: flex;
+	justify-content: space-between;
+	background-color: #566573;
+	margin-top: 20%;
+}
+
+.copyright{
+	font-size: 15px;
+	margin:auto;
+
+}
+
+.contact{
+	font-size: 15px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	padding-right: 25%;
+}
+
+
+/************************************************/
+/*FIN FOOTER*/
+/************************************************/
