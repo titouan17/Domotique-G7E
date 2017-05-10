@@ -17,7 +17,7 @@ $_SESSION['nom'] = $_POST['nom'];
 <?php
 	include'header2.php';
 
-	if ($_POST['prenom']!='' AND $_POST['nom']!='')
+	if ($_SESSION['prenom']!='' AND $_SESSION['nom']!='')
 	{
 		echo htmlspecialchars("Bonjour " . ' ' . $_SESSION['prenom'] . ' ' . $_SESSION['nom']);
 	}
