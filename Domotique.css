@@ -7,10 +7,10 @@ body:before {
         content: "";
         position: fixed;
         height: 100%; width: 100%;
-        background: url('house.jpg');
-        background-size: cover; 
+        background-image: url(/php/App/Matthieu/Git/Image/house.jpg);
+        background-size: cover;
         z-index: -1;
-        -webkit-opacity :0.5;
+        -webkit-opacity :0.8;
     }
 
 
@@ -18,86 +18,115 @@ body:before {
 /****************************************************/
 /*DEBUT HEADER1-2*/
 /****************************************************/
-
-.connexion{
-    float: right;
-    text-align: right;
-    padding: 3%;
-    font-size: 15px;
-}
-
-h1{
-	margin: 0;
-}
-
-a{
-	text-decoration: none;
-	color: black;
-}
-
 header
 {
 	background-color: rgba(0, 0, 0, 0.5);
+	height: 7.3vw;
 }
 
 #header2{
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
-	height: 100px;
-	width: 100%;
-	top:0px;
-	position: fixed;
 }
 
 #conteneur{
 	display: flex;
-	justify-content: space-between;
-}
-
-#conteneur2{
-	display: flex;
-	justify-content: start;
+	
+	height: 7.3vw;
 }
 
 .logo{
-	float: left;
 	height: 7.2vw;
 	width: 8vw;
 }
 
-.nom h1{
-    float: left;
-	vertical-align: middle;
-    width: 40%;
-    height: 75px;
-    border: none;
-    color: white; 
+.nom{
+	font-size: 2.5vw;
+	font-weight: bold;
+	width: 8vw;
+	padding-top: 0.7vw;
+	padding-left: 0.5vw;
+	color: #FF3A40; 
 }
 
-nav ul
-{
+nav ul{
 	list-style-type: none;
 	display: flex;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-nav li
-{
-	margin-right: 50px;
-	margin-bottom: 30px; 
+nav li{
+	margin-right: 5vw;
+	margin-top: 2.3vw;
 }
 
-nav a
-{
+nav a{
 	color: white;
+	text-align: center;
 	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.5vw;
 }
 
-nav a:hover
-{
+nav a:hover{
 	color: #FF3A40;
 }
 
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1vw;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.rechercher
+{	
+	margin-top: 25px;
+}
+
+@media screen and (max-width: 1024px){
+
+	.nom{
+		padding-top: 1vw;
+		font-size: 4vw;
+		width: 40vw;
+	}
+
+	nav a{
+		font-size: 1.4vw;
+	}
+	
+	.head2 li{
+		margin-top: 1vw;
+	}
+
+	.rechercher{
+		display: none;
+	}
+}
 
 /****************************************************/
 /*FIN HEADER2*/
@@ -109,14 +138,16 @@ nav a:hover
 /************************************************/
 .box
 {
-	padding-top: 200px;
+	padding-top: 5%;
+	display: flex;
+	justify-content: space-between;
 }
 
 #box_connexion
 {
 	border: 2px solid #383176;
 	width: 30%;
-	padding: 5%;
+	padding: 2.5%;
 	margin: auto;
 	border-radius: 10px;
 	background-color: #F0F3F4;
@@ -138,6 +169,56 @@ nav a:hover
 {
 	text-align: center;
 	color: #FF3A40;
+}
+
+input[type=text]
+{
+	width: 9vw;
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 5px;
+}
+
+input[type=submit]{
+	background-color: #FF3A40;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+input[type=email]{
+	width: 9vw;
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 5px;
+}
+
+input[type=password]{
+	width: 10vw;
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 5px;
+}
+
+input[type=date]{
+	width: 11vw;
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
 }
 /************************************************/
 /*FIN ACCUEIL*/
@@ -333,7 +414,7 @@ h1{
 .description3{
 	width: 75%;
 	text-align: center;
-	color: #383176; /*Bleu*/
+	color: white;
 	font-size: 20px;
 	margin-top: 200px;
 }
@@ -344,16 +425,19 @@ h1{
 }
 
 .equiper{
-	color: #383176;
+	color: white;
+	background-color: #383176;
+	border: none;
 	font-size: 20px;
-	border: 2px solid #383176; /*bleu*/
 	border-radius: 5px;
 	padding: 20px;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 
 .equiper:hover
 {
-	border-color: white;
 	background-color: white;
 	color: #FF3A40; 				/*Saumon*/
 }
@@ -406,47 +490,35 @@ h1{
 /************************************************/
 #domicile
 {
-	padding-top: 200px;
+	padding-top: 5vw;
+	margin: 2vw;
+	
+}
+
+#domicile h2
+{
+	color: #76D7C4;
+ 
 }
 
 #piece
 {
 	display: flex;
-	flex-direction: column;
-	width: auto;
-	height: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 15px;
 	border: 2px solid black;
-	margin: auto;
-	margin-bottom: 10%;
-	padding: 2.5%;
-	border-radius: 10px;
-}
-
-#ligne
-{
-	display: flex;
-	justify-content: space-between;
-	padding-right: 50px;
-	margin: auto;
-	margin-bottom: 50px;
-}
-
-#capteur
-{
-
-	padding-right: 100px;	
+	background-color: white;
+	padding-right:30px;
+	border-radius: 1vw;
+	margin-bottom: 6vw;
 }
 
 #capteur h3
 {
 	text-align: center;
 	vertical-align: middle;
-}
-
-#capteur ul
-{
-	align-content: center;
-	text-align: center;
+	width: 150px;
 }
 
 .description_capteur
@@ -458,18 +530,27 @@ h1{
 {
 	height: 40px;
 	width: 40px;
+	margin-left:30px;
 }
 
 .luminosite
 {
 	height: 40px;
 	width: 40px;
+	margin-left:54px;
 }
 
 .humidite
 {
 	height: 40px;
 	width: 40px;
+	margin-left:30px;
+
+}
+
+.range{
+	width: 100px;
+	margin-left: 24px;
 }
 /************************************************/
 /*FIN MON DOMICILE*/
@@ -480,12 +561,13 @@ h1{
 /************************************************/
 #contact-box
 {
-	padding-top: 15%;
+	padding-top: 10%;
 }
 
 #contact-box h1
 {
 	text-align: center;
+	color: #FF3A40;
 }
 
 #contact{
@@ -497,10 +579,11 @@ h1{
 	margin-top: 10%;
 }
 
-.b1  
+.b1
 {
     text-align: justify;
     width: 30%;
+    color: white
 }
 
 .b1 img
@@ -509,17 +592,29 @@ h1{
 	align-content: center;
 	height: 20vw;
 	width: 28vw;
+	padding-top: 20%;
 }
 
 .b1 h3
 {
 	text-align: center;
+	padding-bottom: 15%;
+	color: #FF3A40;
+}
+
+.appeler
+{
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
 }
 
 .b2
 {
     text-align: justify;
     width: 30%;
+   	color: white;
 }
 
 .b2 img
@@ -532,6 +627,16 @@ h1{
 .b2 h3
 {
 	text-align: center;
+	padding-bottom: 10%;
+	color: #FF3A40;
+}
+
+.b2 a
+{
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
 }
 
 .b3
@@ -550,10 +655,27 @@ h1{
 .b3 h3
 {
 	text-align: center;
+	padding-bottom: 10%;
+	color: #FF3A40;
 }
+
+.b3 p
+{
+	color: white;
+}
+
+.b3 a
+{
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
 /************************************************/
 /*FIN CONTACT*/
 /************************************************/
+
 
 /************************************************/
 /*Footer*/
