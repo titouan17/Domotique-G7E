@@ -1,21 +1,29 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="Styles/domotique1.css">
+        <link rel="stylesheet" href="/php/App/Matthieu/Git/Style/Domotique.css">
 		<title>G7Entreprise</title>
     </head>
 
 <body>
-	<?php include'header1.php';?>
+	<?php include'/Applications/XAMPP/xamppfiles/htdocs/php/App/Matthieu/Git/Vue/Header1.php';?>
 
 	<section>
 		<aside class="box">
 			<div id="box_connexion">
 				<h1>Se connecter</h1>
 				<div class="formulaire_connexion">
+				<?php if(isset($_GET['cible']) AND $_GET['cible']=='echoue'){
+					echo 'mots de passe ou indentifiant incorrect';
+				}else if(isset($_GET['cible']) AND $_GET['cible']=='deconnecter'){
+					echo 'Deconnection validée';
+				}
+				?>
 					<br/>
-					<form method="POST" action="monDomicile.php">
+					<form method="POST" action="Connexion.php?cible=verif">
 						<p>
 							<label for="email">E-mail :</label>
 							<input type="email" name="email" id="email" />
@@ -37,7 +45,7 @@
 				<h1>S'inscrire</h1>
 				<div class="formulaire_connexion">
 					<br/>
-					<form method="POST" action="monDomicile.php">
+					<form method="POST" action="Connexion.php?cible=inscrire">
 						<p>	
 							<label for="nom">Nom : </label><input type="text" name="nom">
 
@@ -73,7 +81,7 @@
 		</aside>
 	</section>
 
-	<?php include 'footer.php' ?>
+	<?php include '/Applications/XAMPP/xamppfiles/htdocs/php/App/Matthieu/Git/Vue/Footer.php' ?>
 
 </body>
 
