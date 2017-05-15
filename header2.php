@@ -12,11 +12,21 @@
 
 	<nav class="head2">
 		<ul>
-			<li><a href="Domotique.php">Accueil</a></li>
-			<li><a href="contact.php">Contact</a></li>
 			<li>
 				<div class="dropdown">
-					<a href="monDomicile.php">Mon domicile</a>
+					<a href="CeMAC.php?cible=CeMAC">Accueil</a>
+					<div class="dropdown-content">
+						<a href="CeMAC.php?cible=CeMAC">CeMAC</a>
+						<a href="QuiSommesNous.php?cible=QuiSommesNous">Qui sommes-nous ?</a>
+					</div>
+				</div>
+			</li>
+
+			<li><a href="contact.php?cible=contact">Contact</a></li>
+
+			<li>
+				<div class="dropdown">
+					<a href="monDomicile.php?cible=monDomicile">Mon domicile</a>
 					<div class="dropdown-content">
 						<a href="#">Domicile</a>
 						<a href="#">Pièces</a>
@@ -26,12 +36,13 @@
 			</li>
 			<li>
 				<div class="dropdown">
-					<a href="monProfil.php">Mon Profil</a>
+					<a href="monProfil.php?cible=profil">Mon Profil</a>
 					<div class="dropdown-content">
 						<a href="#">Paramètres</a>
-						<a href="#">Déconnexion</a>
+						<a href="Connexion.php?cible=deconnexion">Déconnexion</a>
 					</div>
-				</div></li>
+				</div>
+			</li>
 		</ul>
 	</nav>
 </header>
