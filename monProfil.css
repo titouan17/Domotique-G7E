@@ -1,0 +1,72 @@
+/*********************************/
+/************Mon Profil***********/
+/*********************************/
+
+body
+{
+	background-image: url("house (1).jpg");
+	
+
+	background-attachment: scroll; /* scroll, fixed. Le fond defilera ou sera fixé */
+	background-repeat: no-repeat; /*le fond ne sera pas répété*/
+	/*background: url("electrique.jpg") fixed no-repeat;*/
+	color: black;
+
+}
+
+
+.important
+{
+	color: blue;
+	font-size: ;
+}
+
+
+.profil 
+{
+	font-size: 24px;  /*taille*/
+	text-align: center;  /* alignement au centre, left à gauche, right à droite*/
+	/*text-align: justify; que le texte prenne toute la largeur possible sans laisser d'espace blanc à la fin des lignes*/
+	font-family: "Comic Sans MS" ;/*choisir la police*/
+
+}
+
+
+.personnelle 
+{
+	background-color: white;
+	border: 2px black groove; /*bordure largeur couleur type*/
+	border-radius: 10px; /*bordure arrondie*/
+	box-shadow: 6px 6px 10px black; /* ombre horizontale vertical adoucissement couleur*/
+	text-align: center;
+	/*font-style: italic;  permet de mettre en italique*/
+	font-weight: bold; /*permet de mettre en gras*/
+
+
+	/*text-decoration: line-through;  il barre la phrase */
+	/*text-decoration: underline;     il souligne */
+	/*text-decoration: overline;      il permet de mettre d'une ligne au dessus*/
+
+
+
+
+
+}
+
+
+.autoriser 
+{
+	text-align: center;
+
+}
+
+
+.presentation 
+
+{
+	text-align: left;
+
+}
+
+
+
