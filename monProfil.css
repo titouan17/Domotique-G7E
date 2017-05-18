@@ -1,72 +1,63 @@
-/*********************************/
-/************Mon Profil***********/
-/*********************************/
 
-body
-{
-	background-image: url("house (1).jpg");
-	
 
-	background-attachment: scroll; /* scroll, fixed. Le fond defilera ou sera fixé */
-	background-repeat: no-repeat; /*le fond ne sera pas répété*/
-	/*background: url("electrique.jpg") fixed no-repeat;*/
-	color: black;
-
+body {
+    margin:0;
+    padding:0;
+    font-family: verdana;
+}
+body:before {
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+    background-image: url(house.jpg);
+    background-size: cover;
+    z-index: -1;
+    -webkit-opacity :0.6;
 }
 
-
-.important
-{
-	color: blue;
-	font-size: ;
+#profil{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10%;
 }
 
-
-.profil 
-{
-	font-size: 24px;  /*taille*/
-	text-align: center;  /* alignement au centre, left à gauche, right à droite*/
-	/*text-align: justify; que le texte prenne toute la largeur possible sans laisser d'espace blanc à la fin des lignes*/
-	font-family: "Comic Sans MS" ;/*choisir la police*/
-
-}
-
-
-.personnelle 
-{
-	background-color: white;
-	border: 2px black groove; /*bordure largeur couleur type*/
-	border-radius: 10px; /*bordure arrondie*/
-	box-shadow: 6px 6px 10px black; /* ombre horizontale vertical adoucissement couleur*/
+.description_profil{
+	width: 75%;
 	text-align: center;
-	/*font-style: italic;  permet de mettre en italique*/
-	font-weight: bold; /*permet de mettre en gras*/
-
-
-	/*text-decoration: line-through;  il barre la phrase */
-	/*text-decoration: underline;     il souligne */
-	/*text-decoration: overline;      il permet de mettre d'une ligne au dessus*/
-
-
-
-
-
+	margin-top: 200px;
 }
 
-
-.autoriser 
+.description_profil h1
 {
+	color: #FF5151;
+}
+
+.description_profil p{
+	font-size: 0.6em;
+	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 2.5%;
+}
+
+.equiper{
+	margin-right: 20px;
+}
+
+#informations{
+	display: flex;
+	justify-content: space-around;
+}
+
+#informations h2{
+	color: #2874A6;
+}
+
+.description_informations{
+	width: 40%;
+	margin-left: 5%;
+}
+
+.description_informations h1{
 	text-align: center;
-
 }
-
-
-.presentation 
-
-{
-	text-align: left;
-
-}
-
-
-
