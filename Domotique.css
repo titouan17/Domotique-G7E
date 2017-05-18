@@ -680,27 +680,45 @@ h1{
 /************************************************/
 /*Footer*/
 /************************************************/
-#conteneurFooter{
+footer{
 	display: flex;
-	justify-content: space-between;
 	background-color: #566573;
+	justify-content: space-around;
 	margin-top: 20%;
+	padding-bottom: 2.5%;
 }
 
-.copyright{
-	font-size: 15px;
-	margin:auto;
-
+footer p, ul{
+	font-size: 0.9em;
 }
 
-.contact{
-	font-size: 15px;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
-	padding-right: 25%;
+footer h1{
+	font-size: 1.2em;
 }
 
+#copyright{
+	width: 30%;
+}
 
+#tweet{
+	width: 30%;
+}
+
+#tweet img{
+	height: 40px;
+	width: 40px;
+	padding-right: 20px;
+}
+
+#propos{
+	width: 25%;
+	margin-bottom: 0;
+}
+
+#propos a{
+	text-decoration: none;
+	color: black;
+}
 /************************************************/
 /*FIN FOOTER*/
 /************************************************/
