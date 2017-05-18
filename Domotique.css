@@ -562,6 +562,8 @@ h1{
 #contact-box
 {
 	padding-top: 10%;
+	display: flex;
+	flex-direction: column;
 }
 
 #contact-box h1
@@ -581,97 +583,63 @@ h1{
 
 .b1
 {
-    text-align: justify;
+    text-align: center;
     width: 30%;
-    color: white
-}
-
-.b1 img
-{
-	border-radius: 20px;
-	align-content: center;
-	height: 20vw;
-	width: 28vw;
-	padding-top: 20%;
+    color: white;
 }
 
 .b1 h3
 {
 	text-align: center;
-	padding-bottom: 15%;
-	color: #FF3A40;
+	padding-bottom: 5%;
+	color:  #F4D03F;
+	font-weight: lighter;
+	font-size: 1.5em;
 }
 
-.appeler
+.b1 a
 {
-	text-align: center;
 	text-decoration: none;
-	font-size: 20px;
-	color: white;
-}
-
-.b2
-{
-    text-align: justify;
-    width: 30%;
-   	color: white;
-}
-
-.b2 img
-{
-	border-radius: 20px;
-	height: 20vw;
-	width: 28vw;
-}
-
-.b2 h3
-{
-	text-align: center;
-	padding-bottom: 10%;
 	color: #FF3A40;
+	font-size: 1.5em;
 }
 
-.b2 a
+.b1 ul
 {
-	text-align: center;
-	text-decoration: none;
-	font-size: 20px;
-	color: white;
-}
-
-.b3
-{
-    text-align: justify;
-    width: 30%;
-}
-
-.b3 img
-{
-	border-radius: 20px;
-	height: 20vw;
-	width: 28vw;
-}
-
-.b3 h3
-{
-	text-align: center;
-	padding-bottom: 10%;
+	list-style: none;
+	text-align: left;
 	color: #FF3A40;
+	font-size: 1em;
 }
 
-.b3 p
+#team
 {
-	color: white;
+	background-color: #F1C40F;
 }
 
-.b3 a
+.tête
 {
+	padding-top: 5%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.tête img
+{
+	height: 200px;
+	width: 200px;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+figcaption
+{
+	font-size: 0.8em;
 	text-align: center;
-	text-decoration: none;
-	font-size: 20px;
-	color: white;
+	color: grey;
 }
-
 /************************************************/
 /*FIN CONTACT*/
 /************************************************/
