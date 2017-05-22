@@ -2,7 +2,7 @@
 	<div id="conteneur">
 		<a href="Domotique.php"><img class="logo" src="photoSite/maisonvrai4.png" alt="logo"/></a>
 		<div class="nom">
-			G7 Entreprise
+			Domisep
 		</div>
 	</div>
 
