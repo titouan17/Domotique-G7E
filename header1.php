@@ -4,7 +4,7 @@
 		<div id="conteneur_header2">
 			<a href="Domotique.php"><img class="logo" src="photoSite/maisonvrai4.png" alt="logo"/></a>
 			<div class="nom">
-				<h1>G7 Entreprise</h1>
+				<h1>Domisep</h1>
 			</div>
 		</div>
 	</div>
