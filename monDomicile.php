@@ -10,7 +10,7 @@ $_SESSION['nom'] = $_POST['nom'];
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="Styles/domotique1.css">
-		<title>G7Entreprise</title>
+		<title>Domisep</title>
     </head>
 
 <body>
