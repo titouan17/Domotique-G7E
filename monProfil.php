@@ -8,7 +8,7 @@ session_start();
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="Style/monProfil1.css"/>
 		<link rel="stylesheet" href="Style/domotique.css"/>
-		<title>G7Entreprise</title>
+		<title>Domisep</title>
 	</head>
 
 	<body>
