@@ -1,6 +1,6 @@
 <footer>
 		<div id="copyright">
-			<h1>G7Enterprise</h1>
+			<h1>Domisep</h1>
 			<p>Tous droits réservés</p>
 		</div>
 
@@ -11,7 +11,7 @@
 		</div>
 
 		<div id="propos">
-			<h1>A propos de nous</h1>
+			<h1>A propos de Domisep</h1>
 			<ul>
 				<li><a href="contact.php">Contact</a></li>
 				<li><a href="QuiSommesNous.php">Qui sommes-nous ?</a></li>
