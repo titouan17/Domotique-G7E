@@ -1,6 +1,6 @@
 <header id="header2">
 	<div id="conteneur">
-		<a href="Domotique.php"><img class="logo" src="photoSite/maisonvrai4.png" alt="logo"/></a>
+		<a href="Domotique.php"><img class="logo" src="Image/maison1.png" alt="logo"/></a>
 		<div class="nom">
 			Domisep
 		</div>
