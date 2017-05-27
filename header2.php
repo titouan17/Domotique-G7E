@@ -6,10 +6,6 @@
 		</div>
 	</div>
 
-	<form>
-		<input type="text" name="search" placeholder="Rechercher..." class="rechercher">
-	</form>
-
 	<nav class="head2">
 		<ul>
 			<li>
