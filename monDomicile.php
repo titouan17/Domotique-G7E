@@ -1,6 +1,6 @@
+
 <?php
 session_start();
-
 $_SESSION['prenom'] = $_POST['prenom'];
 $_SESSION['nom'] = $_POST['nom'];
 ?>
@@ -16,17 +16,14 @@ $_SESSION['nom'] = $_POST['nom'];
 <body>
 <?php
 	include'header2.php';
-
 	if ($_SESSION['prenom']!='' AND $_SESSION['nom']!='')
 	{
 		echo htmlspecialchars("Bonjour " . ' ' . $_SESSION['prenom'] . ' ' . $_SESSION['nom']);
 	}
-
 	else
 	{
 		echo "Veuillez entrer tous les paramètres nécessaires.";
 	}
-
 ?>
 
 	<section>
@@ -134,13 +131,11 @@ $_SESSION['nom'] = $_POST['nom'];
 						<h3>Luminosité</h3>	
 					</div>
 				</div>
-
 				<div id="capteur">
 					<div class="description_capteur">
 						<h3>Température</h3>	
 					</div>				
 				</div>
-
 				<div id="capteur">
 					<div class="description_capteur">
 						<h3>Humidité</h3>	
